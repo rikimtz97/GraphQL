@@ -2,8 +2,11 @@ using GraphQLServer.Data;
 using GraphQLServer.GraphQL;
 using GraphQLServer.MethodExtensions;
 using Microsoft.EntityFrameworkCore;using Microsoft.EntityFrameworkCore.Migrations;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 
 builder.Services
     .AddGraphQLServer()

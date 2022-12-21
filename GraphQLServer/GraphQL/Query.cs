@@ -11,7 +11,7 @@ namespace GraphQLServer.GraphQL
 {
     public class Query
     {
-        [UsePaging]
+        [UseOffsetPaging(IncludeTotalCount =true)]
         [UseProjection]
         [UseFiltering]
         [UseSorting]

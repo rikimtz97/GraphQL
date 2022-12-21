@@ -79,3 +79,5 @@ C:\Users\Ricardo Martinez\source\repos\GraphQLNetCore\GraphQLServer\bin\Debug\ne
 C:\Users\Ricardo Martinez\source\repos\GraphQLNetCore\GraphQLServer\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Ricardo Martinez\source\repos\GraphQLNetCore\GraphQLServer\bin\Debug\net6.0\Microsoft.Extensions.DiagnosticAdapter.dll
 C:\Users\Ricardo Martinez\source\repos\GraphQLNetCore\GraphQLServer\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Ricardo Martinez\source\repos\GraphQLNetCore\GraphQLServer\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Ricardo Martinez\source\repos\GraphQLNetCore\GraphQLServer\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

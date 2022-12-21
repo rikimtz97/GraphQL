@@ -1,4 +1,5 @@
-﻿using GraphQLServer.Data;
+﻿using AutoMapper;
+using GraphQLServer.Data;
 using GraphQLServer.GraphQL.Types;
 using GraphQLServer.Models;
 using System;
@@ -13,33 +14,43 @@ namespace GraphQLServer.GraphQL
     {
 
         public async Task<PublicacionPayload> CreatePublicacion(BlogContext context,
+            [Service] IMapper mapper,
             PublicacionInputType inputPublicacion)
         {
-            var publicacion = new Publicacion()
-            {
-                AutorId = inputPublicacion.AutorId,
-                CategoriaId = inputPublicacion.CategoriaId,
-                Contenido = inputPublicacion.Contenido,
-                Estado = inputPublicacion.Estado,
-                ImagenUrl = inputPublicacion.ImagenUrl,
-                Rating = inputPublicacion.Rating,
-                Titulo = inputPublicacion.Titulo,
+            var publicacion = mapper.Map<Publicacion>(inputPublicacion);
 
-            };
             await context.Publicaciones.AddAsync(publicacion);
             await context.SaveChangesAsync();
 
-            return new PublicacionPayload
+            return mapper.Map<PublicacionPayload>(publicacion);
+
+        }
+        public async Task<PublicacionPayload>UpdatePublicacion(BlogContext context,
+            [Service]IMapper mapper,
+            int id, PublicacionInputType inputPublicacion)
+        {
+            var publicacion = mapper.Map<Publicacion>(inputPublicacion);
+            publicacion.Id = id;
+            context.Publicaciones.Update(publicacion);
+            await context.SaveChangesAsync();
+            return mapper.Map<PublicacionPayload>(publicacion);
+
+        }
+        public async Task<bool> DeletePublicacion(BlogContext context, int id)
+        {
+            try
             {
-                Id = publicacion.Id,
-                AutorId = publicacion.AutorId,
-                CategoriaId = publicacion.CategoriaId,
-                Contenido = publicacion.Contenido,
-                Estado = publicacion.Estado,
-                ImagenUrl = publicacion.ImagenUrl,
-                Rating = publicacion.Rating,
-                Titulo = publicacion.Titulo,
-            };
+                var publicacionBd = await context.Publicaciones.FindAsync(id);
+                if(publicacionBd is null) return false;
+
+                context.Publicaciones.Remove(publicacionBd);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
     }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "POc46L4STqxhWUhv1rp2oao6PRcHR/XXrrhqbSzV0seVSBamLfgr6bpFcr10MkbOaH0rnOXo5cwdES1ZjZJ8SA==",
+  "dgSpecHash": "qrMP0C+hStldBWsQnjUfkv2XSyuK7pqJfWp7uqXs2yUfDURLyoCI1j4DysHcr0wibPjcE0h+Ud5WJrxwBE2V0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ricardo Martinez\\source\\repos\\GraphQLNetCore\\GraphQLServer\\GraphQLServer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\greendonut\\12.15.1\\greendonut.12.15.1.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\hotchocolate\\12.15.1\\hotchocolate.12.15.1.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\hotchocolate.abstractions\\12.15.1\\hotchocolate.abstractions.12.15.1.nupkg.sha512",
@@ -28,7 +30,7 @@
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\hotchocolate.validation\\12.15.1\\hotchocolate.validation.12.15.1.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
-    "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Ricardo Martinez\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
